@@ -1,6 +1,6 @@
 // Edita aquí tu carta: nombre, descripción y precio en pesos (COP).
 export const RESTAURANTE = {
-  nombre: "La Arepa Dorada",
+  nombre: "El restaurante de la abuela",
   lema: "Cocina antioqueña",
 };
 
