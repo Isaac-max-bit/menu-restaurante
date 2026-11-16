@@ -33,9 +33,9 @@ export default function MenuScreen({ onVolver }) {
             <div className="plato-fila">
               <h2>{p.nombre}</h2>
               <span className="punteado" aria-hidden="true" />
-              <span className="precio">{cop(p.precio)}</span>
+              <span className="precio">{p.precio ? cop(p.precio) : "Consultar"}</span>
             </div>
-            <p className="desc">{p.desc}</p>
+            {p.desc && <p className="desc">{p.desc}</p>}
           </article>
         ))}
       </section>

@@ -1,31 +1,50 @@
-// Edita aquí tu carta: nombre, descripción y precio en pesos (COP).
-export const RESTAURANTE = {
-  nombre: "El restaurante de la abuela",
+// Aquí en este archivo va el menu, los platos de los restaurantes, para que miren y consulten
+export const RESTUARANTE = {
+  nombre: "La arepa Dorada",
   lema: "Cocina antioqueña",
 };
 
 export const MENU = {
-  Entradas: [
-    { nombre: "Empanadas de carne", desc: "Tres unidades con ají casero", precio: 12000 },
-    { nombre: "Patacones con hogao", desc: "Plátano verde crocante, hogao y queso", precio: 14000 },
-    { nombre: "Ceviche de camarón", desc: "Limón, cilantro y cebolla morada", precio: 26000 },
-    { nombre: "Sopa del día", desc: "Pregunta a tu mesero", precio: 13000 },
+  Desayunos: [
+    { nombre: "Desayuno snecillo", precio: 8000 },
+    { nombre: "Calentao completo", precio: 10000 },
+    { nombre: "Calentao sencillo", precio: 15000 },
   ],
-  "Platos fuertes": [
-    { nombre: "Bandeja paisa", desc: "Frijoles, arroz, chicharrón, carne molida, huevo y arepa", precio: 38000 },
-    { nombre: "Churrasco a la parrilla", desc: "300 g con papas criollas y ensalada", precio: 46000 },
-    { nombre: "Trucha al ajillo", desc: "Con arroz de coco y patacón", precio: 39000 },
-    { nombre: "Risotto de champiñones", desc: "Opción vegetariana", precio: 32000 },
+  Especiales: [
+    { nombre: "Hígado encebollado", precio: 19000 },
+    { nombre: "Chuleta de cerdo", precio: 28000 },
+    { nombre: "Pechuga tropical", precio: 28000 },
+    { nombre: "Cazuela de frijol", precio: 28000 },
+    { nombre: "Bandeja paisa", precio: 28000 },
+    { nombre: "Costilla a la BBQ", precio: 28000 },
   ],
-  Postres: [
-    { nombre: "Postre de natas", desc: "Receta tradicional antioqueña", precio: 11000 },
-    { nombre: "Brevas con arequipe", desc: "Con queso fresco", precio: 12000 },
-    { nombre: "Brownie con helado", desc: "Chocolate oscuro y vainilla", precio: 14000 },
+  "Pescados y otros": [
+    { nombre: "Consomé de pollo", precio: 18000 },
+    { nombre: "Sancocho de bagre", precio: 20000 },
+    { nombre: "Bagre frito", precio: 25000 },
+    { nombre: "Trucha", precio: 25000 },
+    { nombre: "Róbalo", precio: 28000 },
+    { nombre: "Tilapia", precio: 30000 },
+    { nombre: "Sierra", precio: 40000 },
+    { nombre: "Bocachico", precio: 35000 },
+    { nombre: "Salmón", precio: 40000 },
+    { nombre: "Cachama", precio: 35000 },
   ],
-  Bebidas: [
-    { nombre: "Limonada de coco", desc: "Cremosa y bien fría", precio: 10000 },
-    { nombre: "Jugo natural", desc: "Lulo, maracuyá o mora", precio: 8000 },
-    { nombre: "Café de origen", desc: "Filtrado, de Antioquia", precio: 6000 },
-    { nombre: "Cerveza artesanal", desc: "Rubia, roja o negra", precio: 14000 },
+  "Bandejas y caseros": [
+    { nombre: "Res", precio: 19000 },
+    { nombre: "Pollo sudado", precio: 19000 },
+    { nombre: "Cerdo", precio: 19000 },
+    { nombre: "Molida", precio: 19000 },
+    { nombre: "pechuga", precio: 19000 },
+    { nombre: "Sobrebarriga", precio: 19000 },
+    { nombre: "chicharrón", precio: 19000 },
+    { nombre: "Albóndigas", precio: 19000 },
   ],
-};
+  Adicionales: [
+    { nombre: "Sopa prqueña", precio: 4000 },
+    { nombre: "Sopa grande", precio: 8000 },
+    { nombre: "Brazo de reina", precio: 9000 },
+    { nombre: "Porción de arroz", precio: 2500 },
+    { nombre: "Ensalada", precio: 2500}
+  ],
+}
