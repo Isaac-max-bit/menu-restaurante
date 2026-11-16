@@ -1,16 +1,17 @@
-// Aquí en este archivo va el menu, los platos de los restaurantes, para que miren y consulten
-export const RESTUARANTE = {
-  nombre: "La arepa Dorada",
+// Si un plato no tiene precio definido, déjalo sin "precio" y se mostrará "Consultar".
+export const RESTAURANTE = {
+  nombre: "La Arepa Dorada",
   lema: "Cocina antioqueña",
 };
 
 export const MENU = {
   Desayunos: [
-    { nombre: "Desayuno snecillo", precio: 8000 },
+    { nombre: "Desayuno sencillo", precio: 8000 },
     { nombre: "Calentao completo", precio: 10000 },
     { nombre: "Calentao sencillo", precio: 15000 },
   ],
   Especiales: [
+    { nombre: "Pechuga apanada", desc: "En salsa de maíz" },
     { nombre: "Hígado encebollado", precio: 19000 },
     { nombre: "Chuleta de cerdo", precio: 28000 },
     { nombre: "Pechuga tropical", precio: 28000 },
@@ -20,7 +21,7 @@ export const MENU = {
   ],
   "Pescados y otros": [
     { nombre: "Consomé de pollo", precio: 18000 },
-    { nombre: "Sancocho de bagre", precio: 20000 },
+    { nombre: "Sancocho de bagre" },
     { nombre: "Bagre frito", precio: 25000 },
     { nombre: "Trucha", precio: 25000 },
     { nombre: "Róbalo", precio: 28000 },
@@ -31,20 +32,20 @@ export const MENU = {
     { nombre: "Cachama", precio: 35000 },
   ],
   "Bandejas y caseros": [
-    { nombre: "Res", precio: 19000 },
-    { nombre: "Pollo sudado", precio: 19000 },
-    { nombre: "Cerdo", precio: 19000 },
-    { nombre: "Molida", precio: 19000 },
-    { nombre: "pechuga", precio: 19000 },
-    { nombre: "Sobrebarriga", precio: 19000 },
-    { nombre: "chicharrón", precio: 19000 },
-    { nombre: "Albóndigas", precio: 19000 },
+    { nombre: "Res" },
+    { nombre: "Cerdo" },
+    { nombre: "Molida" },
+    { nombre: "Pechuga" },
+    { nombre: "Albóndigas" },
+    { nombre: "Chicharrón" },
+    { nombre: "Sobrebarriga" },
+    { nombre: "Pollo sudado" },
   ],
   Adicionales: [
-    { nombre: "Sopa prqueña", precio: 4000 },
+    { nombre: "Sopa pequeña", precio: 4000 },
     { nombre: "Sopa grande", precio: 8000 },
     { nombre: "Brazo de reina", precio: 9000 },
     { nombre: "Porción de arroz", precio: 2500 },
-    { nombre: "Ensalada", precio: 2500}
+    { nombre: "Ensalada", precio: 2500 },
   ],
-}
+};
