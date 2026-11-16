@@ -17,13 +17,21 @@ export default function MenuScreen({ onVolver }) {
       <nav className="tabs" aria-label="Categorías">
         {categorias.map((c) => (
           <button
-            key={c}
-            className={"tab" + (c === activa ? " activa" : "")}
-            aria-current={c === activa}
-            onClick={() => setActiva(c)}
-          >
-            {c}
-          </button>
+  key={c}
+  className={"tab" + (c === activa ? " activa" : "")}
+  aria-current={c === activa}
+  onClick={(e) => {
+    setActiva(c);
+    const suave = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    e.currentTarget.scrollIntoView({
+      behavior: suave ? "smooth" : "auto",
+      inline: "center",
+      block: "nearest",
+    });
+  }}
+>
+  {c}
+</button>
         ))}
       </nav>
 

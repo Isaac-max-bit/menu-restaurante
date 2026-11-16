@@ -10,7 +10,11 @@
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 * { box-sizing: border-box; }
-html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--linea) var(--fondo);
+}
+
 body {
   margin: 0;
   background: var(--fondo);
@@ -80,9 +84,19 @@ button { font: inherit; cursor: pointer; }
   overflow-x: auto;
   background: var(--fondo);
   border-bottom: 1px solid var(--linea);
-  margin-bottom: 22px;
+  margin: 0 -22px 22px;
+  padding: 0 22px;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: 22px;
+  scrollbar-width: none; /* oculta la barra en Firefox */
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 36px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 36px), transparent);
 }
+.tabs::-webkit-scrollbar { display: none; } /* oculta la barra en Chrome, Edge y Safari */
+
 .tab {
+  flex: none;
+  scroll-snap-align: start;
   background: none;
   border: 0;
   border-bottom: 3px solid transparent;
