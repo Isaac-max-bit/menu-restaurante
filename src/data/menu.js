@@ -1,6 +1,6 @@
 // Si un plato no tiene precio definido, déjalo sin "precio" y se mostrará "Consultar".
 export const RESTAURANTE = {
-  nombre: "La Arepa Dorada",
+  nombre: "Restaurante sazón de la abuela",
   lema: "Cocina antioqueña",
 };
 
